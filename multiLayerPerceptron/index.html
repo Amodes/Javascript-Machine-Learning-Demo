@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MLWEB</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" />
+		<script src="socket.io/socket.io.js"></script>
+		<script src="jquery.min.js"> </script>
+		<script src="client.js"> </script>
+
+	</head>
+	<body>
+		<h1>Machine Learning</h1>
+		<hr></hr>
+		<h2>Demo Neuronal Network</h2>
+		<div class="input">
+		<h3>Rate following artists:</h3><br>
+		<label>Red Hot Chili Peppers:
+			<select id="rhcp">
+				<option>0.0</option>
+				<option>0.2</option>
+				<option>0.4</option>
+				<option>0.6</option>
+				<option>0.8</option>
+				<option>1.0</option>
+			</select>
+		</label><p></p>
+		<label>Justin Bieber:
+			<select id="bieber">
+				<option>0.0</option>
+				<option>0.2</option>
+				<option>0.4</option>
+				<option>0.6</option>
+				<option>0.8</option>
+				<option>1.0</option>
+			</select>
+		</label><p></p>
+		<label>System Of A Down:
+			<select id="soad">
+				<option>0.0</option>
+				<option>0.2</option>
+				<option>0.4</option>
+				<option>0.6</option>
+				<option>0.8</option>
+				<option>1.0</option>
+			</select>
+		</label><p></p>
+		<label>Eminem
+			<select id="eminem">
+				<option>0.0</option>
+				<option>0.2</option>
+				<option>0.4</option>
+				<option>0.6</option>
+				<option>0.8</option>
+				<option>1.0</option>
+			</select>
+		</label><p></p>
+		<label>David Guetta
+			<select id="dg">
+				<option>0.0</option>
+				<option>0.2</option>
+				<option>0.4</option>
+				<option>0.6</option>
+				<option>0.8</option>
+				<option>1.0</option>
+			</select>
+		</label><p></p>
+		<label>Wu-Tang-Clan
+			<select id="wtc">
+				<option>0.0</option>
+				<option>0.2</option>
+				<option>0.4</option>
+				<option>0.6</option>
+				<option>0.8</option>
+				<option>1.0</option>
+			</select>
+		</label><p></p>
+		<label>Lady Gaga
+			<select id="gaga">
+				<option>0.0</option>
+				<option>0.2</option>
+				<option>0.4</option>
+				<option>0.6</option>
+				<option>0.8</option>
+				<option>1.0</option>
+			</select>
+		</label><p></p>
+		<label>Daft Punk
+			<select id="dp">
+				<option>0.0</option>
+				<option>0.2</option>
+				<option>0.4</option>
+				<option>0.6</option>
+				<option>0.8</option>
+				<option>1.0</option>
+			</select>
+		</label><p></p>
+		<input type="button" id="ask" value="Listen Next:">
+		</div>
+		<div class="output">
+		<h3>Your music recommendation: </h3><br>
+		Linkin Park: <h3 id="lp"></h3>
+		Rihanna: <h3 id="rihanna"></h3>
+		ACDC: <h3 id="acdc"></h3>
+		Kanye West: <h3 id="kanye"></h3>
+		Martin Garrix: <h3 id="mg"></h3>
+		2Pac: <h3 id="pac"></h3>
+		Avicii: <h3 id="avicii"></h3>
+		</div>
+	</body>
+</html>

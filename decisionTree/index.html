@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MLWEB</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" />
+		<script src="socket.io/socket.io.js"></script>
+		<script src="jquery.min.js"> </script>
+		<script src="client.js"> </script>
+
+	</head>
+	<body>
+		<h1>Machine Learning</h1>
+		<hr></hr>
+		<h2>Demo Decision Tree</h2>
+		Whats your favorite music genre?<br>
+		Do you like the following artists? 0=no 1=yes<br><br>
+		<label>Red Hot Chili Peppers:
+			<select id="rhcp">
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</label><p></p>
+		<label>Justin Bieber:
+			<select id="bieber">
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</label><p></p>
+		<label>System Of A Down:
+			<select id="soad">
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</label><p></p>
+		<label>Eminem
+			<select id="eminem">
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</label><p></p>
+		<label>David Guetta
+			<select id="dg">
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</label><p></p>
+		<label>Wu-Tang-Clan
+			<select id="wtc">
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</label><p></p>
+		<label>Lady Gaga
+			<select id="gaga">
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</label><p></p>
+		<label>Daft Punk
+			<select id="dp">
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</label><p></p>
+		<input type="button" id="ask" value="Welches Genre?">
+		<p></p>
+		<h3 id="answer">I don't know</h3>
+	</body>
+</html>
